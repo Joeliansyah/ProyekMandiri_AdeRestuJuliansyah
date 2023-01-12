@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SejarahActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:background="#721F19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerbg" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:fontFamily="@font/helvetica"
+        android:text="Visi Compass"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_photo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/logogazelle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/copyright"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/textcompass" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bagianvisi1" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:background="#721F19"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Mengikuti Visi dari Ayah"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Brand Compass bisa lahir karena adanya keinginan Kahar Gunawan untuk membangun kembali pabrik sepatu berdasarkan visi yang ditinggalkan oleh ayahnya, almarhum Kahar Setiadi."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="&quot;Visi Compass selalu menghasilkan alas kaki berkualitas baik yang menjangkau demografi yang luas dan beragam.&quot; "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:srcCompat="@drawable/bagiansejarah1" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="#721F19"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Dorong Kesadaran Masyarakat\nakan Produk Lokal"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Motivasi yang selalu dipegang oleh Kahar Gunawan selaku owner sepatu Compass adalah untuk meningkatkan kesadaran masyarakat Indonesia akan produk lokal."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="“Menyadarkan kembali masyarakat Indonesia agar selalu bangga untuk menjadi Indonesia, salah satunya dengan memakai produk buatan Indonesia.”"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

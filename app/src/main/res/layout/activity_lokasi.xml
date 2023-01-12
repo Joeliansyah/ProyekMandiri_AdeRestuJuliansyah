@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SejarahActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:background="#721F19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerbg" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:fontFamily="@font/helvetica"
+        android:text="Koleksi Sepatu "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_photo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/logogazelle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/copyright"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/textcompass" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="#000000"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="KOLEKSI GAZELLE"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/koleksi1"
+                android:layout_width="360dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="16dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:gravity="center"
+                android:text="Rp 408.000 - Rp 438.000"
+                android:textColor="@color/design_default_color_error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/koleksi1" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:background="#000000"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="KOLEKSI RETROGRADE"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/koleksi2"
+                android:layout_width="360dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="16dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Rp. 538.000 - Rp 1.368.000"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/koleksi2" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="#000000"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="KOLEKSI SLIPON"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/koleksi3"
+                android:layout_width="360dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="16dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" >
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:gravity="center"
+                android:text="Rp 458.000 - Rp 1.368.000"
+                android:textColor="@color/design_default_color_error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/koleksi3" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="#000000"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="KOLEKSI LINEN"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@id/textView32" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/koleksi4"
+                android:layout_width="360dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="16dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView33" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:gravity="center"
+                android:text="Rp 538.000 - Rp 568.000"
+                android:textColor="@color/design_default_color_error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/koleksi4" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="#000000"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="KOLEKSI PROTOLITE"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView34" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/koleksi5"
+                android:layout_width="360dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="16dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView35" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:gravity="center"
+                android:text="Rp 578.000"
+                android:textColor="@color/design_default_color_error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/koleksi5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

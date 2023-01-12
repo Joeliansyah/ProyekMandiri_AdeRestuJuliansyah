@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SejarahActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:background="#721F19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerbg" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:fontFamily="@font/helvetica"
+        android:text="Collaboration Compass"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_photo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/logogazelle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/copyright"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/textcompass" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="#000000"
+                android:fontFamily="@font/junicodereguler"
+                android:gravity="center"
+                android:text="Legacy Reimagined"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="2022     FXXKING RABBITS"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Compass®️ dan Fxxking Rabbits mencoba bereksperimen dengan perspektif yang berbeda, lebih dari sekedar himbauan gaya hidup sehat tetapi juga melibatkan proses pengendalian diri dalam segala hal."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Dirilis pada 11 Maret 2022, edisi terbatas Compass®️ dan @Fxxkingrabbits &quot;Smoking Kills®️&quot; Retrograde terdiri dari 3 siluet."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/collab1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="2022     #FR2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collab1" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Dalam bahasa Indonesia, DOKO? artinya &quot;DI MANA?&quot; dan dimana?&quot; dalam bahasa Inggris. @FR2DOKO adalah konsep rilis artikel #FR2 dengan konsep popup, menggunakan mobil van berwarna kuning yang khas."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Sepatu ini dijual eksklusif pada tanggal 8-10 Januari 2022 hanya di @FR2GALLERY, Harajuku, Jepang."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/collab2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/helvetica"
+                android:text="2021     TAME IMPALA"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collab2" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Bertajuk ‘ARTIFICIAL VIBRATION’, kolaborasi ini menghadirkan koleksi sepatu dan apparel yang mewujudkan energi, suara, dan jiwa musik Tame Impala. Lagu diubah menjadi produk yang dapat dikenakan atau disimpan sebagai memorabilia oleh penggemar musik dan penikmat mode."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabiasa"
+                android:text="Elemen visual ini dimanifestasikan ke dalam koleksi sepatu, yang ditentukan oleh tiga desain: Waveform, Tie-Dye, Spectrogram."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/collab3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
