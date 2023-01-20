@@ -63,7 +63,7 @@ public class dashboard extends AppCompatActivity {
         cvAdd5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent add5 = new Intent(dashboard.this,LokasiActivity.class);
+                Intent add5 = new Intent(dashboard.this,KoleksiActivity.class);
                 startActivity(add5);
             }
         });
